@@ -9,10 +9,6 @@ class Child extends Model
 {
     use HasFactory;
 
-    public function toys(){
-        return $this->belongsToMany(Toy::class, 'child_toy');
-    }
-
     protected $fillable = [
         'name',
         'surname',
@@ -20,4 +16,8 @@ class Child extends Model
         'age',
         'naughty',
     ];
+
+    public function toys(){
+        return $this->belongsToMany(Toy::class, 'child_toy');
+    }
 }

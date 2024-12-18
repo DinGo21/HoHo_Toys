@@ -15,4 +15,8 @@ class Toy extends Model
         'description',
         'min_age',
     ];
+
+    public function children(){
+        return $this->belongsToMany(Child::class, 'child_toy');
+    }
 }
