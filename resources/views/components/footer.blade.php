@@ -19,7 +19,7 @@
             </svg>
             Rebeca Bernal
         </a>
-        <a class="footerLink">
+        <a class="footerLink" href="https://github.com/ugotchriscoded">
             <svg class="footerIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
                     fill="#9D0030"

@@ -4,27 +4,43 @@
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
     background-color: var(--darkRed);
     color: var(--beige);
-    padding-right: 3rem;
 }
 
 h1 {
+    text-align: center;
     font-family: 'Christmas Squad';
-    font-size: 110px;
+    font-size: 6rem;
 }
 
 header img {
-    width: 180px;
-    position: relative;
-    top: 35px;
-    transition: transform 1.5s ease;
+    width: 6rem;
+    transition: transform 1s ease;
 }
 
 header img:hover {
     transform: scale(1.2);
 }
+
+.headerNav {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.headerNavContainer {
+    padding: 1rem;
+    border-radius: 2.5rem;
+    background-color: var(--beige);
+}
+
+.headerNavLink {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--darkRed);
+    padding: 0 1rem;
+}
+
