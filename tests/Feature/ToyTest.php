@@ -27,7 +27,7 @@ class ToyTest extends TestCase
 
     //     $toy = Toy::factory()->create();
 
-    //     $response = $this->get('/elf/' . $toy->id);
+    //     $response = $this->get(route('elfshow' , 1));
 
     //     $response->assertStatus(200)
     //         ->assertViewIs('elfShow')

@@ -22,15 +22,15 @@ class ChildTest extends TestCase
             ->assertViewIs('santa');
     }
 
-    // public function test_CheckIfSantaCanGetOneChildInView() {
-    //     $this->withoutExceptionHandling();
+    public function test_CheckIfSantaCanGetOneChildInView() {
+        $this->withoutExceptionHandling();
 
-    //     $child = Child::factory()->create();
+        $child = Child::factory()->create();
 
-    //     $response = $this->get('/santa/' . $child->id);
+        $response = $this->get('/santa/show/' . $child->id);
 
-    //     $response->assertStatus(200)
-    //         ->assertViewIs('santaShow')
-    //         ->assertViewHas('santa', $child);
-    // }
+        $response->assertStatus(200)
+                 ->assertViewIs('santashow')
+                 ->assertViewHas('santa', $child);
+    }
 }
