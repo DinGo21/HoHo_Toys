@@ -16,7 +16,7 @@ return new class extends Migration
             $table->text('name');
             $table->text('photo');
             $table->text('description');
-            $table->enum('min_age', [0,7,12]);
+            $table->enum('min_age', [0,3,7,12,16,18]);
             $table->timestamps();
         });
     }
