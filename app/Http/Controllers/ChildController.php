@@ -18,12 +18,7 @@ class ChildController extends Controller
             $this->destroy($request->id);
             
             return Redirect::to(route('santa'));
-        }else if ($request->action === 'edit'){
-            $this->edit($request->id);
-
-            return Redirect::to(route('santa'));
         }
-
         $children = Child::all();
 
         return view('santa', compact('children'));
@@ -101,5 +96,7 @@ class ChildController extends Controller
         $child = Child::find($id);
 
         $child -> delete();
+
+        return Redirect::to('santa');
     }
 }
