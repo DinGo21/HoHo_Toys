@@ -6,19 +6,21 @@
 header {
     background-color: var(--darkRed);
     color: var(--beige);
-    padding: 1rem;
 }
 
 h1 {
     text-align: center;
     font-family: 'Christmas Squad';
-    font-size: 5rem;
+    font-size: 6rem;
     margin-bottom: 1.7rem;
+    padding-right: 1.6rem;
 }
 
 header img {
-    width: 5rem;
+    width: 8rem;
     transition: transform 1s ease;
+    position: relative;
+    top: 1.6rem;
 }
 
 header img:hover {
