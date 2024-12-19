@@ -8,17 +8,17 @@
 }
 
 .addBtn a {
-    display: flex; /* Asegura que la imagen y el texto estén en la misma estructura */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-decoration: none; /* Quita subrayado del enlace */
+    text-decoration: none;
 }
 
 .add {
-    width: 6rem; /* Ajusta a un tamaño fijo */
-    height: 6rem; /* Ajusta a un tamaño fijo */
-    margin: 0 auto; /* Centra horizontalmente */
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
 }
 
 .addBtn p {
@@ -28,14 +28,14 @@
     font-family: 'Christmas Squad';
     font-size: 3rem;
     color: #333;
-    text-decoration: none; /* Asegura que no haya subrayado */
+    text-decoration: none;
 }
 
 .add:hover {
-    transform: scale(1.3); /* Efecto de agrandamiento al pasar el cursor */
+    transform: scale(1.3);
     transition: transform 1s ease;
 }
 
 .backBtn {
-    padding-left: 1.5rem; ;
+    padding-left: 1.5rem;
 }

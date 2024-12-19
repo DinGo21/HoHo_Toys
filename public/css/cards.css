@@ -1,81 +1,77 @@
 .card {
     width: 18rem;
-    background-color: var(--card); /* Fondo blanco */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
-    overflow: hidden; /* Evita que los elementos salgan del card */
-    margin: 20px; /* Espaciado entre cards */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación para hover */
+    background-color: var(--card);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Crece ligeramente al pasar el cursor */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Cambia el orden: título primero */
 .card-body {
     display: flex;
-    flex-direction: column; /* Asegura que los elementos estén en columna */
-    align-items: center; /* Centra el contenido horizontalmente */
+    flex-direction: column;
+    align-items: center;
     padding: 15px;
 }
 
 .card-title {
-    color: var(--darkRed); /* Rojo brillante para destacar */
-    font-family: 'Christmas Squad', sans-serif; /* Fuente navideña */
+    color: var(--darkRed);
+    font-family: 'Christmas Squad', sans-serif;
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 10px; /* Espacio entre título y descripción */
+    margin-bottom: 10px;
 }
 
 .list-group {
-    margin-top: 10px; /* Espacio entre la lista y el contenido anterior */
-    
-    width: 100%; /* Asegura que la lista ocupe todo el ancho */
+    margin-top: 10px;
+    width: 100%;
     padding: 0;
 }
 
 .list-group-item {
-    background-color: white; /* Fondo blanco por defecto */
-    color: var(--brown); /* Texto marrón por defecto */
+    background-color: white;
+    color: var(--brown);
     font-family: 'Arial', sans-serif;
-    border: none; /* Sin bordes entre elementos */
-    
-    font-size: 1.2rem; /* Fuente más pequeña para la descripción */
+    border: none;
+    font-size: 1.2rem;
 }
 
 .list-group-item:nth-child(1n) {
-    background-color: #144414; /* Verde oscuro para el ID */
-    color: white; /* Texto blanco para contraste */
-    font-weight: bold; /* Destacar visualmente */
+    background-color: #144414;
+    color: white;
+    font-weight: bold;
 }
 
 .list-group-item:nth-child(2n) {
-    background-color: var(--darkRed); /* Verde oscuro para el ID */
-    color: white; /* Texto blanco para contraste */
-    font-weight: bold; /* Destacar visualmente */
+    background-color: var(--darkRed);
+    color: white;
+    font-weight: bold;
 }
 
 .crudBtn {
-    width: 40px; /* Tamaño fijo para los íconos */
+    width: 40px;
     height: 40px;
-    margin: 0 5px; /* Espaciado entre íconos */
-    transition: transform 0.3s ease; /* Animación para hover */
+    margin: 0 5px;
+    transition: transform 0.3s ease;
 }
 
 .crudBtn:hover {
-    transform: scale(1.2); /* Crece ligeramente al pasar el cursor */
-    filter: brightness(1.2); /* Efecto de brillo */
+    transform: scale(1.2);
+    filter: brightness(1.2);
 }
 
 .card-body a {
-    display: inline-block; /* Asegura alineación */
-    text-decoration: none; /* Quita subrayado */
+    display: inline-block;
+    text-decoration: none;
     margin-top: 10px;
 }
 
-/* Botones CRUD en horizontal */
 .card-body {
     display: flex;
     flex-direction: column;
@@ -83,9 +79,9 @@
 }
 
 .card-body .crud-container {
-    display: flex; /* Alinea los botones en fila */
+    display: flex;
     justify-content: center;
-    gap: 10px; /* Espaciado entre los botones */
+    gap: 10px;
 }
 
 #oneCard {

@@ -1,17 +1,15 @@
-/* Personalización de la barra de scroll */
 ::-webkit-scrollbar {
-    width: 10px; /* Grosor del scroll */
-    min-height: 50px;
+    width: 10px; 
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent; /* Fondo de la pista */
+    background: transparent; 
 }
 
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, #1a621a 25%, #d92239 25%, #d92239 50%, #1a621a 50%, #1a621a 75%, #d92239 75%);
-    background-size: 20px 20px; /* Patrón alternado de bastón de caramelo */
-    border-radius: 10px; /* Bordes redondeados */
+    background-size: 20px 20px; 
+    border-radius: 10px; 
 }
 
 ::-webkit-scrollbar-thumb:hover {

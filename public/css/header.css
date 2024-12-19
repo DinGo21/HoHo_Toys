@@ -14,10 +14,11 @@ h1 {
     font-size: 6rem;
     margin-bottom: 1.7rem;
     padding-right: 1.6rem;
+    margin-right: 1.2rem;
 }
 
 header img {
-    width: 8rem;
+    width: 12rem;
     transition: transform 1s ease;
     position: relative;
     top: 1.6rem;
