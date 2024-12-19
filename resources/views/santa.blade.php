@@ -21,13 +21,14 @@
                 <li class="list-group-item">Behavior: {{$child->naughty ? 'Bad' : 'Good'}}</li>
             </ul>
             <div class="card-body">
-                <a href="{{ route('santashow', ['id' => $child->id]) }}">
-                    <img src="img/viewIcon.ico" alt="view-Button" class="crudBtn">
-                </a>
-
-                <a href="?action=delete&id={{$child->id}}">
-                    <img src="{{ asset('img/deleteIcon.ico') }}" alt="delete-Button" class="crudBtn">
-                </a>
+                <div class="crud-container">
+                    <a href="{{ route('santashow', ['id' => $child->id]) }}">
+                        <img src="img/viewIcon.ico" alt="view-Button" class="crudBtn">
+                    </a>
+                    <a href="?action=delete&id={{$child->id}}">
+                        <img src="{{ asset('img/deleteIcon.ico') }}" alt="delete-Button" class="crudBtn">
+                    </a>
+                </div>
             </div>
         </div>
     @endforeach

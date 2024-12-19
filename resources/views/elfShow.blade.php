@@ -9,7 +9,7 @@
 </div>
 
 <div class="cardSection">
-    <div class="card" style="width: 18rem;">
+    <div class="card" id="oneCard">
         <img src="{{$toy->photo}}" class="card-img-top" alt="Photo of {{$toy->name}}">
         <div class="card-body">
             <h5 class="card-title">{{$toy->name}}</h5>

@@ -41,7 +41,7 @@
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="form-button">Add New Toy</button>
+                <button type="submit" class="form-button">Add New</button>
             </div>
         </form>
     </div>
