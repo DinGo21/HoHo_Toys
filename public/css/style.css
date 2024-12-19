@@ -5,6 +5,10 @@
 @import url(home.css);
 @import url(elf.css);
 @import url(santa.css);
+@import url(addBtn.css);
+@import url(cards.css);
+@import url(forms.css);
+@import url(scrollBar.css);
 
 /*#app{
     min-height: 100vh;

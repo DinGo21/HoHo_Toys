@@ -42,7 +42,7 @@
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="form-button">Edit child</button>
+                <button type="submit" class="form-button">Update</button>
             </div>
         </form>
     </div>

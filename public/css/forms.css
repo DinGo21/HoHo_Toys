@@ -1,0 +1,92 @@
+/* Contenedor principal del formulario */
+.formChild , .formToy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+    background-color: var(--beige); /* Fondo cálido */
+    padding: 20px;
+}
+
+/* Título del formulario */
+.form-title {
+    font-family: 'Christmas Squad', sans-serif; /* Fuente navideña */
+    font-size: 4.5rem;
+    color: var(--darkRed); /* Tono rojo oscuro */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: var(--card); /* Fondo beige claro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    width: 100%;
+    max-width: 500px; /* Limita el ancho */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre campos */
+}
+
+/* Grupo de formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre label e input */
+}
+
+/* Etiquetas */
+.form-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.7rem;
+    color: var(--brown);
+    font-weight: bold;
+}
+
+/* Inputs */
+.form-input,
+.form-select {
+    padding: 10px;
+    border: 2px solid var(--brown);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: 'Arial', sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al enfocar el campo */
+.form-input:focus,
+.form-select:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 8px rgba(69, 197, 11, 0.5); /* Verde navideño */
+}
+
+/* Botón de enviar */
+.form-button {
+    padding: 10px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 3rem;
+    font-family: 'Christmas Squad', sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover del botón */
+.form-button:hover {
+    background-color: var(--darkRed);
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Asegura que el contenedor del botón esté centrado */
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

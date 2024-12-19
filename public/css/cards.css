@@ -1,0 +1,93 @@
+.card {
+    width: 18rem;
+    background-color: var(--card); /* Fondo blanco */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    overflow: hidden; /* Evita que los elementos salgan del card */
+    margin: 20px; /* Espaciado entre cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación para hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Crece ligeramente al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+/* Cambia el orden: título primero */
+.card-body {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 15px;
+}
+
+.card-title {
+    color: var(--darkRed); /* Rojo brillante para destacar */
+    font-family: 'Christmas Squad', sans-serif; /* Fuente navideña */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px; /* Espacio entre título y descripción */
+}
+
+.list-group {
+    margin-top: 10px; /* Espacio entre la lista y el contenido anterior */
+    
+    width: 100%; /* Asegura que la lista ocupe todo el ancho */
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: white; /* Fondo blanco por defecto */
+    color: var(--brown); /* Texto marrón por defecto */
+    font-family: 'Arial', sans-serif;
+    border: none; /* Sin bordes entre elementos */
+    
+    font-size: 1.2rem; /* Fuente más pequeña para la descripción */
+}
+
+.list-group-item:nth-child(1n) {
+    background-color: #144414; /* Verde oscuro para el ID */
+    color: white; /* Texto blanco para contraste */
+    font-weight: bold; /* Destacar visualmente */
+}
+
+.list-group-item:nth-child(2n) {
+    background-color: var(--darkRed); /* Verde oscuro para el ID */
+    color: white; /* Texto blanco para contraste */
+    font-weight: bold; /* Destacar visualmente */
+}
+
+.crudBtn {
+    width: 40px; /* Tamaño fijo para los íconos */
+    height: 40px;
+    margin: 0 5px; /* Espaciado entre íconos */
+    transition: transform 0.3s ease; /* Animación para hover */
+}
+
+.crudBtn:hover {
+    transform: scale(1.2); /* Crece ligeramente al pasar el cursor */
+    filter: brightness(1.2); /* Efecto de brillo */
+}
+
+.card-body a {
+    display: inline-block; /* Asegura alineación */
+    text-decoration: none; /* Quita subrayado */
+    margin-top: 10px;
+}
+
+/* Botones CRUD en horizontal */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body .crud-container {
+    display: flex; /* Alinea los botones en fila */
+    justify-content: center;
+    gap: 10px; /* Espaciado entre los botones */
+}
+
+#oneCard {
+    width: 40rem;
+}
