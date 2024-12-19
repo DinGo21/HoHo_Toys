@@ -111,14 +111,14 @@ class ToysTableSeeder extends Seeder
         
         $toy = new Toy();
         $toy->name="Wood'n Play Elefante";
-        $toy->photo="https://res.cloudinary.com/albertokz/image/upload/v1734346344/Toys/qibq7soze50gvpmebcgw.png";
+        $toy->photo="https://res.cloudinary.com/dg28513f0/image/upload/v1734636833/elefante_is8mat.jpg";
         $toy->description="Wood'n Play - Carrito animal (varios modelos), un pequeño animal de madera con ruedas para llevarlo a pasear y vivir grandes aventuras.\n\nEste juguete es fácil de sostener y manipular por lo que ayuda a los niños a desarrollar sus habilidades motoras.";
         $toy->min_age="0";
         $toy->save();
         
         $toy = new Toy();
         $toy->name="Wood'n Play Leon";
-        $toy->photo="https://res.cloudinary.com/albertokz/image/upload/v1734346343/Toys/ykyyqxlg0reqravtqxeb.png";
+        $toy->photo="https://res.cloudinary.com/dg28513f0/image/upload/v1734636833/leon_c1h6u5.jpg";
         $toy->description="Wood'n Play - Carrito animal (varios modelos), un pequeño animal de madera con ruedas para llevarlo a pasear y vivir grandes aventuras.\n\nEste juguete es fácil de sostener y manipular por lo que ayuda a los niños a desarrollar sus habilidades motoras.";
         $toy->min_age="0";
         $toy->save();
