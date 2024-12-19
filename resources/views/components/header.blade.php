@@ -6,8 +6,8 @@
     </h1>
     <nav class="headerNav">
         <div class="headerNavContainer">
-            <a class="headerNavLink">Children</a>
-            <a class="headerNavLink">Toys</a>
+            <a href="{{route('santa')}}" id="childrenLink" class="headerNavLink">Children</a>
+            <a href="{{route('elf')}}" id="toysLink" class="headerNavLink">Toys</a>
         </div>
     </nav>
 </header>
