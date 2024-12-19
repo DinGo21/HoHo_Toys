@@ -42,7 +42,7 @@
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="form-button">Add New Child</button>
+                <button type="submit" class="form-button">Add New</button>
             </div>
         </form>
     </div>

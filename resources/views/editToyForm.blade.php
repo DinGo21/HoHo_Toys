@@ -7,7 +7,7 @@
     </a>
 </div>
 
-    <div class="tableToy">
+    <div class="formToy">
         <h2 class="form-title">Edit toy</h2>
         <form action="{{ route('elfupdate', $toy->id) }}" method="POST" class="form-container">
 
@@ -41,7 +41,7 @@
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="form-button">Edit Toy</button>
+                <button type="submit" class="form-button">Update</button>
             </div>
         </form>
     </div>

@@ -1,0 +1,89 @@
+.card {
+    width: 18rem;
+    background-color: var(--card);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.card-title {
+    color: var(--darkRed);
+    font-family: 'Christmas Squad', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.list-group {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: white;
+    color: var(--brown);
+    font-family: 'Arial', sans-serif;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.list-group-item:nth-child(1n) {
+    background-color: #144414;
+    color: white;
+    font-weight: bold;
+}
+
+.list-group-item:nth-child(2n) {
+    background-color: var(--darkRed);
+    color: white;
+    font-weight: bold;
+}
+
+.crudBtn {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.crudBtn:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.card-body a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body .crud-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#oneCard {
+    width: 40rem;
+}
