@@ -15,7 +15,7 @@
 ***
 ### :gift: Toy's table
 
-**Elves** should:
+This is the table for Santa's **Elves**. It must:
 
 - Display all **manufactured toys** *(Blade and Json)*.
 - **Insert, modify or delete a toy** *(Endpoints)*.
