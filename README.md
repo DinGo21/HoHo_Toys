@@ -200,3 +200,8 @@ This will add a **folder** called *coverage-report*, go to the folder, go to the
 <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='xampp' src='https://img.shields.io/badge/xampp-100000?style=for-the-badge&logo=xampp&logoColor=white&labelColor=FF8800&color=FF8800'/></a>
 <a href='https://github.com/shivamkapasia0' target="_blank"><img alt='postman' src='https://img.shields.io/badge/postman-100000?style=for-the-badge&logo=postman&logoColor=white&labelColor=FF0000&color=FF0000'/></a>
 ***
+
+## Thanks for reading!
+
+Thanks for reading and **Merry Christmas**. **HO HO HO!** 🎅
+***
