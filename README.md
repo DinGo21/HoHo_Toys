@@ -180,3 +180,7 @@ This will add a **folder** called *coverage-report*, go to the folder, go to the
 (insert screenshoot)
 
 ***
+## :bust_in_silhouette: Authors
+
+  
+***
