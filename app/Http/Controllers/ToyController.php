@@ -18,11 +18,8 @@ class ToyController extends Controller
             $this->destroy($request->id);
             
             return Redirect::to(route('elf'));
-        }else if ($request->action === 'edit'){
-            $this->edit($request->id);
-
-            return Redirect::to(route('elf'));
         }
+        
         $toys = Toy::all();
 
         return view('elf', compact('toys'));
