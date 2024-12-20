@@ -48,3 +48,11 @@ This is the table for **Santa Claus**. It should:
 ![BBDD Diagram](https://github.com/user-attachments/assets/38f857bb-2a0f-4ad9-a1a5-e4b7021d8096)
 
 ***
+## :scroll: Installation
+
+1.) **Clone** this repository:
+```
+https://github.com/DinGo21/HoHo_Toys
+```
+
+***
