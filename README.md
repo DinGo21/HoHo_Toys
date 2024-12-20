@@ -31,3 +31,10 @@ This is the table for **Santa Claus**. It should:
 - Let him watch the **show** of children *(Endpoints and Blade)*.
   
 ***
+### :gift:PIVOT table (Santa's list)
+
+- **Naughty** children will only recieve **1 gift (Coal)**. There are three different types of coal.
+- Good children will receive **2 random gifts** from the list of toys **(age appropriate)** and those gifts can **NOT** be **repeated** to the same child.
+- **+18** gifts only could be recieved by **teens**. They will recieve a random **travel** to these places: **DisneyLand, Warner or Isla Mágica**
+
+***
