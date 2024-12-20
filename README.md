@@ -167,3 +167,16 @@ php artisan test
 
 ***
 ### Coverage
+To see the **coverage** you can use this command at the **VSC** terminal:
+```
+php artisan test --coverage-html=coverage-report
+```
+
+> [!IMPORTANT]
+> Everytime that you do **new tests** you need to put the command above in the **VSC** terminal, so it can **update** your coverage.
+
+This will add a **folder** called *coverage-report*, go to the folder, go to the *index.html*, and then **open with live server**. After that you should see this page:
+
+(insert screenshoot)
+
+***
