@@ -113,7 +113,7 @@ Before you start to read how to install the project you'll need these requiremen
 :black_circle: **Postman**
 
 ***
-## :mag_right:Project documentation
+## :mag_right:Documentation
 
 ### Endpoints
 ***
@@ -150,4 +150,7 @@ Before you start to read how to install the project you'll need these requiremen
 #### Show kid
 (Insert screenshoots)
 
+***
+#### 👼Santa's list
+(Insert endpoints)
 ***
