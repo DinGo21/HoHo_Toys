@@ -15,10 +15,19 @@
 ***
 ### :gift: Toy's table
 
-This is the table for Santa's **Elves**. It must:
+This is the table for Santa's **Elves**. It should:
 
 - Display all **manufactured toys** *(Blade and Json)*.
-- **Insert, modify or delete a toy** *(Endpoints)*.
-- See the **show** of a toy *(Endpoints and Blade)*.
+- Allow to **Insert, modify or delete a toy** *(Endpoints)*.
+- Let them watch the **show** of a toy *(Endpoints and Blade)*.
+
+***
+### 👶Children's table
+
+This is the table for **Santa Claus**. It should:
+
+- Display all **children** *(Blade and Json)*.
+- Allow to **insert, modify or delete a child** *(Endpoints)*.
+- Let him watch the **show** of children *(Endpoints and Blade)*.
   
 ***
