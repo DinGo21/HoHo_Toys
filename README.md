@@ -117,3 +117,20 @@ Before you start to read how to install the project you'll need these requiremen
 
 ### Endpoints
 ***
+#### :gift:Toy's table
+#### Get toys
+(Insert screenshoots)
+
+#### Post toy
+(Insert screenshoots)
+
+#### Update toy
+(Insert screenshoots)
+
+#### Delete toy
+(Insert screenshoots)
+
+#### Show toy
+(Insert screenshoots)
+
+***
