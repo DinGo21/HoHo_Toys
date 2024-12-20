@@ -113,3 +113,7 @@ Before you start to read how to install the project you'll need these requiremen
 :black_circle: **Postman**
 
 ***
+## :mag_right:Project documentation
+
+### Endpoints
+***
