@@ -97,6 +97,19 @@ You'll see an **url** that is going to take you to a website.
 
 ***
 ### :floppy_disk: Installation requirements
+Before you start to read how to install the project you'll need these requirements:
+>[!NOTE]
+>If you can't install xampp, look for any other local server that supports **MySQL** and **PHP**
+***
 
+:black_circle: **XAMPP**
+
+:black_circle: Install **Composer**
+
+:black_circle: Install **NPM** in **Node.js**
+
+:black_circle: **Xdebug** (for the tests coverage)
+
+:black_circle: **Postman**
 
 ***
