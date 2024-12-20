@@ -11,26 +11,126 @@ class ToyTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_CheckIfElfCanGetAllToysInView(){
-        $this->withoutExceptionHandling();
+    /**
+     * Test index method to list all toys.
+     */
+    public function test_indexDisplaysAllToys()
+    {
+        $toys = Toy::factory()->count(3)->create();
 
-        Toy::factory(5)->create();
-        Toy::all();
+        $response = $this->get(route('elf'));
 
-        $response = $this->get('/elf');
         $response->assertStatus(200)
-            ->assertViewIs('elf');
+            ->assertViewIs('elf')
+            ->assertViewHas('toys', function ($viewToys) use ($toys) {
+                return $viewToys->count() === $toys->count();
+            });
     }
 
-    // public function test_CheckIfElfCanGetOneToyInView() {
-    //     $this->withoutExceptionHandling();
+    /**
+     * Test create method to show the creation form.
+     */
+    public function test_createDisplaysCreateForm()
+    {
+        $response = $this->get(route('elfcreate'));
 
-    //     $toy = Toy::factory()->create();
+        $response->assertStatus(200)
+            ->assertViewIs('createToyForm');
+    }
 
-    //     $response = $this->get(route('elfshow' , 1));
+    /**
+     * Test store method to add a new toy.
+     */
+    public function test_storeAddsNewToy()
+    {
+        $data = [
+            'name' => 'New Toy',
+            'photo' => 'photo.jpg',
+            'description' => 'A wonderful toy',
+            'min_age' => 3,
+        ];
 
-    //     $response->assertStatus(200)
-    //         ->assertViewIs('elfShow')
-    //         ->assertViewHas('elf', $toy);
-    // }
+        $response = $this->post(route('elfstore'), $data);
+
+        $response->assertRedirect(route('elf'));
+        $this->assertDatabaseHas('toys', $data);
+    }
+
+    /**
+     * Test show method to display a specific toy.
+     */
+    public function test_showDisplaysSpecificToy()
+    {
+        $toy = Toy::factory()->create();
+
+        $response = $this->get(route('elfshow', $toy->id));
+
+        $response->assertStatus(200)
+            ->assertViewIs('elfShow')
+            ->assertViewHas('toy', $toy);
+    }
+
+    /**
+     * Test edit method to show the edit form.
+     */
+    public function test_editDisplaysEditForm()
+    {
+        $toy = Toy::factory()->create();
+
+        $response = $this->get(route('elfedit', $toy->id));
+
+        $response->assertStatus(200)
+            ->assertViewIs('editToyForm')
+            ->assertViewHas('toy', $toy);
+    }
+
+    /**
+     * Test update method to modify a toy.
+     */
+    public function test_updateModifiesExistingToy()
+{
+    $toy = Toy::factory()->create(['description' => 'description']);
+
+    $response = $this->post(route('elfupdate', $toy->id), [
+        'name' => 'Updated Name',
+        'photo' => 'ohohij',
+        'description' => 'Updated description',
+        'min_age' => 0,
+    ]);
+
+    $response->assertRedirect('elf');
+
+    $updatedToy = Toy::find($toy->id);
+    $this->assertEquals('Updated description', $updatedToy->description);
+    $this->assertEquals('Updated Name', $updatedToy->name);
+    $this->assertEquals(0, $updatedToy->min_age);
+}
+
+
+    /**
+     * Test destroy method to delete a toy.
+     */
+    public function test_destroyDeletesToy()
+    {
+        $response = $this->post(route('elfstore'), [
+            'name' => 'Updated Name',
+            'photo' => 'ohohij',
+            'description' => 'Updated description',
+            'min_age' => 0,
+        ]);
+
+        $response = $this->delete(route('elfdestroy', 1));
+        $this->assertDatabaseCount('toys', 0);
+    }
+
+    public function test_IndexHandlesDeleteAction()
+    {
+        $toy = Toy::factory()->create();
+
+        $response = $this->get(route('elf', ['action' => 'delete', 'id' => $toy->id]));
+
+        $this->assertDatabaseMissing('toys', ['id' => $toy->id]);
+
+        $response->assertRedirect(route('elf'));
+    }
 }

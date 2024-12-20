@@ -97,6 +97,5 @@ class ChildController extends Controller
 
         $child -> delete();
 
-        return Redirect::to('santa');
     }
 }

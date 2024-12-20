@@ -2,15 +2,18 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\Toy;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 
 class ToyController extends Controller
 {
     public function index()
     {
-        return response()->json(Toy::all(), 200);
+        $toy= Toy::all();
+
+        return response()->json($toy, 200);
     }
 
     public function store(Request $request)
@@ -22,27 +25,37 @@ class ToyController extends Controller
             'min_age' => $request->min_age
         ]);
 
+        $toy->save();
+
         return response()->json($toy, 200);
     }
 
     public function show(string $id)
     {
-        return response()->json(Toy::find($id), 200);
+        $toy = Toy::findOrFail($id);
+
+        return response()->json($toy, 200);
     }
 
     public function update(Request $request, string $id)
     {
-        $toy = Toy::update([
+        $toy = Toy::findOrFail($id);
+
+        $toy->update([
             'name' => $request->name,
             'photo' => $request->photo,
             'description' => $request->description,
             'min_age' => $request->min_age
         ]);
 
+        $toy->save();
+
+        return response()->json($toy, 200);
     }
 
     public function destroy(string $id)
     {
-        Toy::find($id)->delete();
+        $toy = Toy::findOrFail($id);
+        $toy->delete();
     }
 }

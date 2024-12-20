@@ -3,7 +3,6 @@
 namespace Tests\Feature\api;
 
 use Tests\TestCase;
-use App\Models\Child;
 use App\Models\Toy;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -12,7 +11,7 @@ class ToyTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_CheckIfSantaCanGetAllToysFromJson(){
+    public function test_CheckIfElfCanGetAllToysFromJson(){
         Toy::factory(2)->create();
 
         $response = $this->get(route('apielfhome'));
@@ -20,20 +19,20 @@ class ToyTest extends TestCase
                  ->assertJsonCount(2);
     }
 
-    public function test_CheckIfSantaCanShowOneChildFromJson(){
+    public function test_CheckIfElfCanShowOneToyFromJson(){
         $toy = Toy::factory()->create();
 
-        $response = $this->get(route('apielfhome', $toy->id));
+        $response = $this->get(route('apielfshow', $toy->id));
         $response->assertStatus(200)
             ->assertJsonFragment(['name' => $toy->name]);
     }
 
-    public function test_CheckIfSantaCanStoreChildsWithApi(){
+    public function test_CheckIfElfCanStoreToysWithApi(){
         $data = [
             'name' => 'Pepito',
             'description' => 'Grillo',
             'photo' => 'photoLink',
-            'min_age' => 6,
+            'min_age' => 7,
         ];
 
         $response = $this->post(route('apielfstore'), $data);
@@ -45,7 +44,7 @@ class ToyTest extends TestCase
             ->assertJsonCount(1);
     }
 
-    public function test_CheckIfSantaCanUpdateChildWithApi(){
+    public function test_CheckIfElfCanUpdateToyWithApi(){
         $toy = Toy::factory()->create();
         $response = $this->get(route('apielfhome'));
 
@@ -56,9 +55,9 @@ class ToyTest extends TestCase
         $response = $this->put(route('apielfupdate', $toy->id),
         [
             'name' => 'Modified Name',
-            'description' => $toy->surname,
+            'description' => $toy->description,
             'photo' => $toy->photo,
-            'min_age' => $toy->age,
+            'min_age' => $toy->min_age,
         ]);
 
         $response = $this->get(route('apielfhome'));
@@ -67,7 +66,7 @@ class ToyTest extends TestCase
             ->assertJsonFragment(['name' => 'Modified Name']);
     }
 
-    public function test_CheckIfSantaCanDeleteChildWithApi(){
+    public function test_CheckIfElfCanDeleteToyWithApi(){
         Toy::factory(2)->create();
 
         $response = $this->delete(route('apielfdestroy', 1));

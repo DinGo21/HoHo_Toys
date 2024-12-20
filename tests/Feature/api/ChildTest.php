@@ -74,7 +74,7 @@ class ChildTest extends TestCase
         $response = $this->delete(route('apisantadestroy', 1));
         $this->assertDatabaseCount('children', 1);
 
-        $response = $this->get(route('apisantashome'));
+        $response = $this->get(route('apisantahome'));
         $response->assertStatus(200)
             ->assertJsonCount(1);
     }
