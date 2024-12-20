@@ -1,4 +1,4 @@
-# HoHo Toys
+# HoHo Toys :teddy_bear:
 
 ## :bulb:Project proposal
 
@@ -11,5 +11,14 @@
 - **Elf routes** must contain the word *elves*.
 - **Santa routes** must contain *Santa*.
 - Creating a **Welcome page** to the toy factory.
+  
+***
+### :gift: Toy's table
+
+**Elves** should:
+
+- Display all **manufactured toys** *(Blade and Json)*.
+- **Insert, modify or delete a toy** *(Endpoints)*.
+- See the **show** of a toy *(Endpoints and Blade)*.
   
 ***
