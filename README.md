@@ -203,5 +203,5 @@ This will add a **folder** called *coverage-report*, go to the folder, go to the
 
 ## Thanks for reading!
 
-Thanks for reading and **Merry Christmas**. **HO HO HO!** 🎅
+**Merry Christmas**. **HO HO HO!** 🎅
 ***
