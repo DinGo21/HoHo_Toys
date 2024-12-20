@@ -134,3 +134,20 @@ Before you start to read how to install the project you'll need these requiremen
 (Insert screenshoots)
 
 ***
+#### 👶Children's table
+#### Get kids
+(Insert screenshoots)
+
+#### Post kid
+(Insert screenshoots)
+
+#### Update kid
+(Insert screenshoots)
+
+#### Delete kid
+(Insert screenshoots)
+
+#### Show kid
+(Insert screenshoots)
+
+***
