@@ -157,6 +157,12 @@ Before you start to read how to install the project you'll need these requiremen
 ***
 ## :white_check_mark: Tests
 
+> [!IMPORTANT]
+> It's important to test the project so we can check if it works correctly and to do that use this command in the **VSC** terminal:
 
+```
+php artisan test
+```
+(insert screenshoot)
 
 ***
