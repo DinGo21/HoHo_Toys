@@ -42,7 +42,7 @@ class ToysTableSeeder extends Seeder
         $toy = new Toy();
         $toy->name="Balón de fútbol Eurocopa";
         $toy->photo="https://res.cloudinary.com/albertokz/image/upload/v1734346343/Toys/eigqyvhqg7qj7tw3dfww.png";
-        $toy->description="El 'Mondo - Balón de fútbol Eurocopa 2024' es el complemento perfecto para las tardes de juego al aire libre. Con su diseño en colores vivos y llamativos, este balón no solo captó la atención de los niños, sino que también los animó a mantenerse activos y disfrutar del ejercicio físico. Además, está hecho con materiales duraderos que garantizan horas y horas de diversión, ya sea en el jardín, en el parque o incluso en la playa. ¡Es ideal para momentos de entretenimiento y competición amigable entre amigos y familiares!";
+        $toy->description="El 'Mondo - Balón de fútbol Eurocopa 2024' es el complemento perfecto para las tardes de juego al aire libre. Este balón capta la atención de los niños y los anima a mantenerse activos disfrutando del ejercicio físico. Está hecho con materiales duraderos que garantizan horas y horas de diversión.";
         $toy->min_age="0";
         $toy->save();
 
