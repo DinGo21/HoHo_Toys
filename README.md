@@ -1,4 +1,4 @@
-# HoHo Toys :teddy_bear:
+# 🎀 HoHo Toys :teddy_bear:
 
 ## :bulb:Project proposal
 
@@ -41,5 +41,10 @@ This is the table for **Santa Claus**. It should:
 ## :eye_speech_bubble: Project overview
 
 (Insert screenshoots)
+
+***
+### Project Diagrams (BBDD)
+
+![BBDD Diagram](https://github.com/user-attachments/assets/38f857bb-2a0f-4ad9-a1a5-e4b7021d8096)
 
 ***
