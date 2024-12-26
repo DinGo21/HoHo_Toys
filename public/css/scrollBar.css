@@ -10,6 +10,7 @@
     background: linear-gradient(45deg, #1a621a 25%, #d92239 25%, #d92239 50%, #1a621a 50%, #1a621a 75%, #d92239 75%);
     background-size: 20px 20px; 
     border-radius: 10px; 
+    min-height: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
