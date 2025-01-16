@@ -6,6 +6,15 @@
         <img src="img/addButton.ico" alt="add-Button" class="add">
         <p>Add New Child</p>
     </a>
+
+    <a href="{{ route('santalist') }}">
+        <img src="img/list.png" alt="list-Button" class="add">
+        <p>Santa's List</p>
+    </a>
+</div>
+
+<div class="addBtn">
+    
 </div>
 
 <div class="cardSection">
