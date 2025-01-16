@@ -59,6 +59,11 @@ class ChildController extends Controller
         return view('santaShow', compact('child'));
     }
 
+    public function list()
+    {
+        return view('createChildForm');
+    }
+
     /**
      * Show the form for editing the specified resource.
      */
