@@ -43,6 +43,7 @@ class ChildController extends Controller
             'photo' => $request->photo,
             'age' => $request->age,
             'naughty' => $request->naughty,
+            'country' => $request->country
         ]);
         $childs->save();
 
@@ -87,6 +88,7 @@ class ChildController extends Controller
             'photo' => $request->photo,
             'age' => $request->age,
             'naughty' => $request->naughty,
+            'country' => $request->country
         ]);
 
         $child -> save();

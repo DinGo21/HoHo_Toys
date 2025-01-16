@@ -17,6 +17,7 @@
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Age: {{$child->age}}</li>
                 <li class="list-group-item">Behavior: {{$child->naughty ? 'Bad' : 'Good'}}</li>
+                <li class="list-group-item">Country: {{$child->country}}</li>
             </ul>
 
             <div class="card-body">

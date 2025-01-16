@@ -41,6 +41,11 @@
                 </select>
             </div>
 
+            <div class="form-group">
+                <label for="coutry" class="form-label">Country</label>
+                <input type="text" name="country" id="country" class="form-input" required placeholder="{{ $child->country}}">
+            </div>
+
             <div class="form-actions">
                 <button type="submit" class="form-button">Update</button>
             </div>

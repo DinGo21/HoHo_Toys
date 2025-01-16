@@ -13,10 +13,6 @@
     </a>
 </div>
 
-<div class="addBtn">
-    
-</div>
-
 <div class="cardSection">
     @foreach ($children as $child)
         <div class="card" style="width: 18rem;">
@@ -28,6 +24,7 @@
                 <li class="list-group-item">Id: {{$child->id}}</li>
                 <li class="list-group-item">Age: {{$child->age}}</li>
                 <li class="list-group-item">Behavior: {{$child->naughty ? 'Bad' : 'Good'}}</li>
+                <li class="list-group-item">Country: {{$child->country}}</li>
             </ul>
             <div class="card-body">
                 <div class="crud-container">

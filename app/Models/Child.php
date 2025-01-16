@@ -15,6 +15,7 @@ class Child extends Model
         'photo',
         'age',
         'naughty',
+        'country'
     ];
 
     public function toys(){

@@ -41,6 +41,11 @@
                 </select>
             </div>
 
+            <div class="form-group">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" name="country" id="country" class="form-input">
+            </div>
+
             <div class="form-actions">
                 <button type="submit" class="form-button">Add New</button>
             </div>

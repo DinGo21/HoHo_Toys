@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('photo');
             $table->integer('age');
             $table->boolean(column: 'naughty');
+            $table->text(column: 'country');
             $table->timestamps();
         });
     }
