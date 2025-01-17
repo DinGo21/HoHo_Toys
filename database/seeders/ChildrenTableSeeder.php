@@ -141,7 +141,7 @@ class ChildrenTableSeeder extends Seeder
 
         $child = new Child();
         $child->name = "Aladin";
-        $child->surname = "Fernández";
+        $child->surname = "Torres";
         $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104782/mierdini%C3%B1os/wkgeprmashf7qskgftgj.png";
         $child->age = 9;
         $child->naughty = true;
