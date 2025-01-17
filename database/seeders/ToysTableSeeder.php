@@ -208,6 +208,26 @@ class ToysTableSeeder extends Seeder
         $toy->min_age="12";
         $toy->save();
 
+        $toy = new Toy();
+        $toy->name="Exploración a la Luna";
+        $toy->photo="https://res.cloudinary.com/dg28513f0/image/upload/v1737108647/mierdini%C3%B1os/mucnqga4yg3zzuiwuzb8.jpg";
+        $toy->description="Un Viaje Fuera de Este Mundo. Vive una experiencia inolvidable con este viaje espacial inspirado en la fascinación por el cosmos. Al estilo de las grandes aventuras, siente cómo sería caminar en la superficie de la Luna, explorar cráteres y contemplar la Tierra desde el espacio. Este destino combina ciencia y emoción, ideal para quienes sueñan con lo desconocido y desean alcanzar las estrellas.";
+        $toy->min_age="18";
+        $toy->save();
+
+        $toy = new Toy();
+        $toy->name="Aventura Épica en Warner";
+        $toy->photo="https://res.cloudinary.com/dg28513f0/image/upload/v1737108647/mierdini%C3%B1os/kalhkwn3xpxc8zzodimt.png";
+        $toy->description="Héroes y Villanos. Prepárate para un día lleno de acción en el parque Warner, donde las historias de superhéroes y villanos cobran vida. Desde montañas rusas que te harán sentir como Batman hasta espectáculos inspirados en películas icónicas, este destino es ideal para los amantes del cine y los cómics. ¡No te pierdas la oportunidad de caminar por los escenarios más famosos y vivir una experiencia cinematográfica única!";
+        $toy->min_age="18";
+        $toy->save();
+
+        $toy = new Toy();
+        $toy->name="Viaje a Disney";
+        $toy->photo="https://res.cloudinary.com/dg28513f0/image/upload/v1737108647/mierdini%C3%B1os/evhgndk4exj7lxtokdpc.jpg";
+        $toy->description="Un Mundo de Magia y Sueños. Sumérgete en el mágico mundo de Disney, donde los cuentos de hadas se hacen realidad. Explora el icónico castillo, disfruta de atracciones inspiradas en tus personajes favoritos y déjate sorprender por espectáculos llenos de emoción y fantasía. Perfecto para familias y para cualquier persona que quiera vivir la magia de la infancia con toda la intensidad de Disney.";
+        $toy->min_age="18";
+        $toy->save();
 
     }
 }
