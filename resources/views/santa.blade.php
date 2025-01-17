@@ -41,7 +41,7 @@
 </div>
 
 <div class="tableChild">
-    <h2 class="form-title">Santa's List</h2>
+    <h2 class="table-title">Santa's List</h2>
     <table class="table">
         <thead>
             <tr>
