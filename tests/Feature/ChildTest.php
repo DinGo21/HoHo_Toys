@@ -40,7 +40,8 @@ class ChildTest extends TestCase
             'surname' => 'Grillo',
             'photo' => 'Example.img',
             'age' => 16,
-            'naughty' => true
+            'naughty' => true,
+            'country' => 'Spain'
         ]);
 
         $response = $this->get(route('santa'));
@@ -55,7 +56,8 @@ class ChildTest extends TestCase
             'surname' => 'Grillo',
             'photo' => 'Example.img',
             'age' => 16,
-            'naughty' => true
+            'naughty' => true,
+            'country' => 'Spain'
         ]);
 
         $response = $this->get(route('santashow', 1));
@@ -85,6 +87,7 @@ class ChildTest extends TestCase
             'photo' => $child->photo,
             'age' => 18,
             'naughty' => true,
+            'country' => 'Spain'
         ]);
 
         $response->assertRedirect('santa');
@@ -100,7 +103,8 @@ class ChildTest extends TestCase
             'surname' => 'Grillo',
             'photo' => 'Example.img',
             'age' => 16,
-            'naugty' => true
+            'naugty' => true,
+            'country' => 'Spain'
         ]);
 
         $response = $this->delete(route('santadestroy', 1));

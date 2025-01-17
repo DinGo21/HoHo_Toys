@@ -33,7 +33,8 @@ class ChildTest extends TestCase
             'surname' => 'Grillo',
             'photo' => 'photoLink',
             'age' => 6,
-            'naughty' => false
+            'naughty' => false,
+            'country' => 'Spain'
         ];
 
         $response = $this->post(route('apisantastore'), $data);
@@ -59,7 +60,8 @@ class ChildTest extends TestCase
             'surname' => $child->surname,
             'photo' => $child->photo,
             'age' => $child->age,
-            'naughty' => $child->naughty
+            'naughty' => $child->naughty,
+            'country' => $child->country
         ]);
 
         $response = $this->get(route('apisantahome'));
