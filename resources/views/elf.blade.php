@@ -8,6 +8,16 @@
     </a>
 </div>
 
+<div>
+    <h5>0+ Toys: {{ $toyCounts[0] }}</h5>
+    <h5>3+ Toys: {{ $toyCounts[1] }}</h5>
+    <h5>7+ Toys: {{ $toyCounts[2] }}</h5>
+    <h5>12+ Toys: {{ $toyCounts[3] }}</h5>
+    <h5>16+ Toys: {{ $toyCounts[4] }}</h5>
+    <h5>18+ Toys: {{ $toyCounts[5] }}</h5>
+    <h5>Total Toys: {{ $toyCounts[6]}}</h5>
+</div>
+
 <div class="cardSection">
 
     @foreach ($toys as $toy)

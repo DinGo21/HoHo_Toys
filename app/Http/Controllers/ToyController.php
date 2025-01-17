@@ -21,8 +21,9 @@ class ToyController extends Controller
         }
         
         $toys = Toy::all();
+        $toyCounts = $this->ageRangeCounter(); 
 
-        return view('elf', compact('toys'));
+        return view('elf', compact('toys', 'toyCounts')); 
     }
 
     /**
@@ -34,7 +35,7 @@ class ToyController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created resource in stormin_age.
      */
     public function store(Request $request)
     {
@@ -42,7 +43,7 @@ class ToyController extends Controller
             'name' => $request->name,
             'photo' => $request->photo,
             'description' => $request->description,
-            'min_age' => $request->min_age,
+            'min_min_age' => $request->min_min_age,
         ]);
         $toys->save();
 
@@ -59,6 +60,44 @@ class ToyController extends Controller
         return view('elfShow', compact('toy'));
     }
 
+    public function ageRangeCounter()
+    {
+        $toys = Toy::all();
+        $count0 = 0;
+        $count3 = 0;
+        $count7 = 0;
+        $count12 = 0;
+        $count16 = 0;
+        $count18 = 0;
+    
+        foreach ($toys as $toy) {
+            switch (true) {
+                case ($toy->min_age == 0):
+                    $count0++;
+                    break;
+                case ($toy->min_age == 3):
+                    $count3++;
+                    break;
+                case ($toy->min_age == 7):
+                    $count7++;
+                    break;
+                case ($toy->min_age == 12):
+                    $count12++;
+                    break;
+                case ($toy->min_age == 16):
+                    $count16++;
+                    break;
+                case ($toy->min_age == 18):
+                    $count18++;
+                    break;
+            }
+        }
+
+        $totalCount = $count0 + $count3 + $count7 + $count12 + $count16 + $count18;
+        return [$count0, $count3, $count7, $count12, $count16, $count18, $totalCount];
+    }
+    
+
      /**
      * Show the form for editing the specified resource.
      */
@@ -70,7 +109,7 @@ class ToyController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified resource in stormin_age.
      */
     public function update(Request $request, string $id)
     {
@@ -80,7 +119,7 @@ class ToyController extends Controller
             'name' => $request->name,
             'photo' => $request->photo,
             'description' => $request->description,
-            'min_age' => $request->min_age,
+            'min_min_age' => $request->min_min_age,
         ]);
 
         $toys -> save();
@@ -88,7 +127,7 @@ class ToyController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified resource from stormin_age.
      */
     public function destroy(string $id)
     {
@@ -96,4 +135,6 @@ class ToyController extends Controller
 
         $toy -> delete();
     }
+    
 }
+

@@ -6,14 +6,21 @@
 header {
     background-color: var(--darkRed);
     color: var(--beige);
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 10; 
 }
 
 h1 {
     text-align: center;
     font-family: 'Christmas Squad';
     font-size: 6rem;
+    margin: 0;
+    padding: 1rem; 
     margin-bottom: 1.7rem;
-    padding-right: 1.6rem;
+    padding-right: 2.5rem;
     margin-right: 1.2rem;
 }
 
@@ -21,7 +28,7 @@ header img {
     width: 12rem;
     transition: transform 1s ease;
     position: relative;
-    top: 1.6rem;
+    top: 1rem;
 }
 
 header img:hover {
