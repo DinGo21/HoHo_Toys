@@ -12,91 +12,101 @@ class ChildrenTableSeeder extends Seeder
     public function run(): void
     {
 
+        
         $child = new Child();
-        $child->name = "Sofía";
-        $child->surname = "Ramírez";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627932/children/8.png";
-        $child->age = 6;
-        $child->naughty = true;
-        $child->country = "Colombia";
+        $child->name = "Valeria";
+        $child->surname = "Dobado";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104782/mierdini%C3%B1os/f0r5ep7wjrfu9vfne0pe.png";
+        $child->age = 1;
+        $child->naughty = false;
+        $child->country = "Spain";
         $child->save();
 
         $child = new Child();
-        $child->name = "Mateo";
-        $child->surname = "López";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627931/children/20.png";
+        $child->name = "Pepe";
+        $child->surname = "Gavilán";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737101523/children/w5lbczci4gmeefebvyov.png";
+        $child->age = 0;
+        $child->naughty = true;
+        $child->country = "Netherlands";
+        $child->save();
+
+        $child = new Child();
+        $child->name = "Rodrigo";
+        $child->surname = "Lastra";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104783/mierdini%C3%B1os/lgkt8bllmg4t5gxigozu.png";
         $child->age = 3;
         $child->naughty = false;
         $child->country = "Portugal";
         $child->save();
 
         $child = new Child();
-        $child->name = "Valentina";
-        $child->surname = "Torres";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627932/children/5.png";
+        $child->name = "Rebeca";
+        $child->surname = "Bernal";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104784/mierdini%C3%B1os/fwj779fnud2lvfrpyvyb.png";
         $child->age = 12;
         $child->naughty = false;
         $child->country = "Germany";
         $child->save();
 
         $child = new Child();
-        $child->name = "Sebastián";
-        $child->surname = "Martínez";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627933/children/1.png";
+        $child->name = "Diego";
+        $child->surname = "Santamaría";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104783/mierdini%C3%B1os/vzpmcuoeiiehlbe0o341.png";
         $child->age = 15;
+        $child->naughty = true;
+        $child->country = "Venezuela";
+        $child->save();
+
+        $child = new Child();
+        $child->name = "Talena";
+        $child->surname = "Barbosa";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104783/mierdini%C3%B1os/mfkjdtj3go4xxzucmkgj.png";
+        $child->age = 8;
         $child->naughty = true;
         $child->country = "Brazil";
         $child->save();
 
         $child = new Child();
-        $child->name = "Camila";
-        $child->surname = "González";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627931/children/17.png";
-        $child->age = 8;
-        $child->naughty = true;
-        $child->country = "Canada";
-        $child->save();
-
-        $child = new Child();
-        $child->name = "Paula";
-        $child->surname = "Hernández";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627932/children/9.png";
+        $child->name = "Mim";
+        $child->surname = "Jorrison";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104802/mierdini%C3%B1os/ixjmhgtmuar5clt1nivb.png";
         $child->age = 18;
-        $child->naughty = false;
-        $child->country = "Australia";
+        $child->naughty = true;
+        $child->country = "United States";
         $child->save();
 
         $child = new Child();
-        $child->name = "Isabella";
-        $child->surname = "Pérez";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627932/children/7.png";
-        $child->age = 10;
-        $child->naughty = false;
+        $child->name = "Earl";
+        $child->surname = "Hickey";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737106479/mierdini%C3%B1os/wzqwurkv7lnscthrzjba.png";
+        $child->age = 14;
+        $child->naughty = true;
         $child->country = "Japan";
         $child->save();
 
         $child = new Child();
         $child->name = "Emilia";
         $child->surname = "Castro";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627933/children/4.png";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737106287/mierdini%C3%B1os/xpx6rqohn258f89j2uyu.png";
         $child->age = 7;
         $child->naughty = true;
         $child->country = "United States";
         $child->save();
 
         $child = new Child();
-        $child->name = "Martina";
-        $child->surname = "Rojas";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627932/children/11.png";
+        $child->name = "Macaulay";
+        $child->surname = "Culkin";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104595/children/oaxukkrcaurupyeo1rby.png";
         $child->age = 5;
-        $child->naughty = false;
+        $child->naughty = true;
         $child->country = "Mexico";
         $child->save();
 
         $child = new Child();
-        $child->name = "Victoria";
+        $child->name = "Victor";
         $child->surname = "Silva";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627931/children/18.png";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737103629/children/nw9aqrfnzibccwqtko9r.png";
         $child->age = 13;
         $child->naughty = false;
         $child->country = "Italy";
@@ -105,35 +115,35 @@ class ChildrenTableSeeder extends Seeder
         $child = new Child();
         $child->name = "Daniel";
         $child->surname = "Cruz";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627932/children/10.png";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104596/children/h5lvms9vmpf7piw2yy1h.png";
         $child->age = 9;
         $child->naughty = false;
         $child->country = "France";
         $child->save();
 
         $child = new Child();
-        $child->name = "Luna";
-        $child->surname = "Moreno";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627932/children/14.png";
-        $child->age = 1;
-        $child->naughty = false;
-        $child->country = "Argentina";
+        $child->name = "Sofía";
+        $child->surname = "Ramírez";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104784/mierdini%C3%B1os/hom8ysmb70vrmxkobkjs.png";
+        $child->age = 6;
+        $child->naughty = true;
+        $child->country = "Colombia";
         $child->save();
 
         $child = new Child();
         $child->name = "Gabriel";
         $child->surname = "Navarro";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627933/children/2.png";
-        $child->age = 16;
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104595/children/r3dsg1yuuwa4kdspnt2g.png";
+        $child->age = 18;
         $child->naughty = true;
         $child->country = "South Korea";
         $child->save();
 
         $child = new Child();
-        $child->name = "Zoe";
+        $child->name = "Aladin";
         $child->surname = "Fernández";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627931/children/16.png";
-        $child->age = 4;
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104782/mierdini%C3%B1os/wkgeprmashf7qskgftgj.png";
+        $child->age = 9;
         $child->naughty = true;
         $child->country = "India";
         $child->save();
@@ -141,25 +151,16 @@ class ChildrenTableSeeder extends Seeder
         $child = new Child();
         $child->name = "Thiago";
         $child->surname = "Méndez";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627931/children/19.png";
-        $child->age = 11;
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104602/children/yflv0lo2c1alpa5mczby.png";
+        $child->age = 5;
         $child->naughty = false;
         $child->country = "South Africa";
         $child->save();
 
         $child = new Child();
-        $child->name = "Oliver";
-        $child->surname = "Peña";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627931/children/15.png";
-        $child->age = 0;
-        $child->naughty = true;
-        $child->country = "Netherlands";
-        $child->save();
-
-        $child = new Child();
-        $child->name = "Pablo";
-        $child->surname = "Soto";
-        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734627933/children/3.png";
+        $child->name = "María";
+        $child->surname = "Dolores";
+        $child->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1737104595/children/yk7b8boklp1y7uzxyrze.png";
         $child->age = 18;
         $child->naughty = false;
         $child->country = "Norway";
