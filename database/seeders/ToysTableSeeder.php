@@ -186,5 +186,28 @@ class ToysTableSeeder extends Seeder
         $toy->min_age="12";
         $toy->save();
         
+
+        $toy = new Toy();
+        $toy->name="Carbón Negro";
+        $toy->photo="https://res.cloudinary.com/dg28513f0/image/upload/v1737104783/mierdini%C3%B1os/n0e04bf0i6996dv1z8qw.png";
+        $toy->description="Para los niños que han sido muy traviesos este año. Te dejará todas las manos y la cara llenas de hollín y se reirán de tí por no bañarte, otaku.";
+        $toy->min_age="12";
+        $toy->save();
+
+        $toy = new Toy();
+        $toy->name="Carbón Rosa";
+        $toy->photo="https://res.cloudinary.com/dg28513f0/image/upload/v1737104783/mierdini%C3%B1os/xytsas0pns0uh7eb8umt.png";
+        $toy->description="Para los que no le caen bien a Santa y les falta espabilar un poco. El año que viene pides menos cosas y eres menos repelente  en la carta.";
+        $toy->min_age="12";
+        $toy->save();
+
+        $toy = new Toy();
+        $toy->name="Carbón Marrón";
+        $toy->photo="https://res.cloudinary.com/dg28513f0/image/upload/v1737104783/mierdini%C3%B1os/pyrpbppmwxn5clayhiok.png";
+        $toy->description="Para los que no se han portado lo suficientemente bien. Pórtate mejor este año o es lo que te toca espabilao.";
+        $toy->min_age="12";
+        $toy->save();
+
+
     }
 }
