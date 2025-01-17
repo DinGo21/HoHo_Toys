@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 Route::get('/santa', [ChildController::class, 'index'])->name('santa');
 Route::get('/santa/show/{id}',[ChildController::class, 'show'])->name('santashow');
-Route::delete('/santa/destroy/{id}', [ChildController::class, 'destroy'])->name('santadestroy');
+Route::delete('/santa/destroy/{id}', [ChildController::class, 'delete'])->name('santadestroy');
 Route::get('/santa/list', [ChildController::class, 'list'])->name('santalist');
 Route::get('/santa/create', [ChildController::class, 'create'])->name('santacreate');
 Route::post('/santa/store', [ChildController::class, 'store'])->name('santastore');

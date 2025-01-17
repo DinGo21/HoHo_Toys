@@ -98,7 +98,7 @@ class ToysTableSeeder extends Seeder
         $toy->name = "Play-Doh Cocina Creativa";
         $toy->photo = "https://res.cloudinary.com/albertokz/image/upload/v1734346340/Toys/w9odjyhtzz7keoksrjla.png";
         $toy->description = "Play-Doh - Set de cocina y restaurante Play-Doh Kitchen Creations. Un set perfecto para pequeños aspirantes a chef con creativas comidas de plastilina Play-Doh.";
-        $toy->min_age = "0";
+        $toy->min_age = "3";
         $toy->save();
 
         $toy = new Toy();
@@ -119,7 +119,7 @@ class ToysTableSeeder extends Seeder
         $toy->name = "Wood'n Play León Carro";
         $toy->photo = "https://res.cloudinary.com/dg28513f0/image/upload/v1734636833/leon_c1h6u5.jpg";
         $toy->description = "Wood'n Play - Carrito animal (varios modelos), un pequeño animal de madera con ruedas para llevarlo a pasear y vivir grandes aventuras. Este juguete es fácil de sostener y manipular, ayudando a los niños a desarrollar sus habilidades motoras.";
-        $toy->min_age = "0";
+        $toy->min_age = "3";
         $toy->save();
 
         $toy = new Toy();
@@ -154,7 +154,7 @@ class ToysTableSeeder extends Seeder
         $toy->name = "Oso de Peluche Gigante";
         $toy->photo = "https://res.cloudinary.com/albertokz/image/upload/v1734346340/Toys/zdhytawbv1d107ahesz8.png";
         $toy->description = "Oso de peluche de 76 cm, un gran oso de peluche con lazo marrón en el cuello.";
-        $toy->min_age = "0";
+        $toy->min_age = "3";
         $toy->save();
 
         $toy = new Toy();
