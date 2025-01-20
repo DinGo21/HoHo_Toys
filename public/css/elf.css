@@ -36,10 +36,10 @@
 
 .countToys{
     display: grid;
-    justify-content: space-evenly;
-    align-content: space-evenly;
     grid-template-columns: 50px 50px;
     grid-template-rows: 50px 20px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
     font: 15px Arial, Helvetica, sans-serif;
     background-color: var(--card);
     border-radius: 10px;
@@ -76,6 +76,7 @@
     grid-column: 2;
     padding-right: 160px;
 }
+
 .countToysGrid :hover{
     transform: scale(1.1);
 }

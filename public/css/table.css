@@ -3,13 +3,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centra horizontalmente el contenido */
-    margin: auto 15%; /* Centra la tabla horizontalmente */
+    align-items: center;
+    margin: auto 15%; 
     margin-bottom: 3%;
 }
 
 table {
-    width: 90%; /* La tabla ocupa solo el 90% del ancho */
+    width: 90%;
     border-collapse: collapse;
     background-color: var(--card);
     font-family: 'Christmas Squad', sans-serif;
@@ -17,7 +17,7 @@ table {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    text-align: center; /* Centra todos los datos */
+    text-align: center;
     padding: 5.5em;
 }
 
@@ -90,7 +90,7 @@ table tbody tr:hover {
     background-color: rgba(69, 197, 11, 0.2);
 }
 
-/* Rounded corners and "paper" shadow */
+
 .table {
     border: 1px solid var(--brown);
     border-radius: 15px;
@@ -99,7 +99,7 @@ table tbody tr:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Handwriting effect for headers */
+
 thead th {
     font-family: 'Christmas Squad', sans-serif;
     font-weight: normal;
@@ -107,7 +107,7 @@ thead th {
     border-bottom: 2px solid white;
 }
 
-/* Footer with a "torn paper" style */
+
 tfoot {
     background-color: var(--brown);
     color: white;
@@ -122,7 +122,7 @@ tfoot td {
     padding: 20px;
 }
 
-/* Adjustments for mobile */
+
 @media screen and (max-width: 768px) {
     table {
         font-size: 1.6rem;

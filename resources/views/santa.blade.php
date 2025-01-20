@@ -1,22 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="addBtn">
-    <a href="{{ route('santacreate') }}">
-        <img src="img/addButton.ico" alt="add-Button" class="add">
-        <p>Add New Child</p>
-    </a>
 
-    <div>
-            <h5 class="good">Good Children: {{ $children->where('naughty', 0)->count() }}</h5>
-            <h5 class="bad">Bad Children: {{ $children->where('naughty', 1)->count() }}</h5>
-            <h5 class="total">Total Children: {{ $children->count() }}</h5>
+<div class="counterChildren">
+    <div class="addBtn">
+        <a href="{{ route('santacreate') }}">
+            <img src="img/addButton.ico" alt="add-Button" class="add">
+            <p>Add New Child</p>
+        </a>
     </div>
 
-    <a href="{{ route('santalistview') }}">
-        <img src="img/list.png" alt="list-Button" class="add">
-        <p>Santa's List</p>
-    </a>
+    <div class="counterChildrenList">
+        <div class="counterNaughtyList">
+            <p class="counterNaughty">Good: {{ $children->where('naughty', 0)->count() }}</p>
+            <p class="counterNaughty">Bad: {{ $children->where('naughty', 1)->count() }}</p>
+            <p class="counterNaughty">Total Children: {{ $children->count() }}</p>
+        </div>
+    </div>
+    
+    <div class="addBtn" id="santaList">
+        <a href="{{ route('santalistview') }}">
+            <img src="img/list.png" alt="list-Button" class="add">
+            <p>Santa's List</p>
+        </a>
+    </div>
+
 </div>
 
 <div class="cardSection">
