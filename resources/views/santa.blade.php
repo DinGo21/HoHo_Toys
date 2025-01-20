@@ -7,6 +7,12 @@
         <p>Add New Child</p>
     </a>
 
+    <div>
+            <h5 class="good">Good Children: {{ $children->where('naughty', 0)->count() }}</h5>
+            <h5 class="bad">Bad Children: {{ $children->where('naughty', 1)->count() }}</h5>
+            <h5 class="total">Total Children: {{ $children->count() }}</h5>
+    </div>
+
     <a href="{{ route('santalist') }}">
         <img src="img/list.png" alt="list-Button" class="add">
         <p>Santa's List</p>
@@ -16,32 +22,42 @@
 <div class="cardSection">
     @foreach ($children as $child)
         <div class="card" style="width: 18rem;">
-            <img src="{{ $child->photo }}" class="card-img-top" alt="Photo of {{ $child->name }} {{ $child->surname }}">
+
+            <div class="cardimg">
+                <img src="{{ $child->photo }}" class="card-img-top" alt="Photo of {{ $child->name }} {{ $child->surname }}">
+            </div>
+
             <div class="card-body">
                 <h5 class="card-title">{{ $child->name }} {{ $child->surname }}</h5>
             </div>
+
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Id: {{ $child->id }}</li>
                 <li class="list-group-item">Age: {{ $child->age }}</li>
                 <li class="list-group-item">Behavior: {{ $child->naughty ? 'Bad' : 'Good' }}</li>
                 <li class="list-group-item">Country: {{ $child->country }}</li>
             </ul>
+
             <div class="card-body">
+
                 <div class="crud-container">
                     <a href="{{ route('santashow', ['id' => $child->id]) }}">
                         <img src="img/viewIcon.ico" alt="view-Button" class="crudBtn">
                     </a>
+
                     <a href="{{ route('santadestroy', ['id' => $child->id]) }}">
                         <img src="{{ asset('img/deleteIcon.ico') }}" alt="delete-Button" class="crudBtn">
                     </a>
                 </div>
+
             </div>
+
         </div>
     @endforeach
 </div>
 
 <div class="tableChild">
-    <h2 class="form-title">Santa's List</h2>
+    <h2 class="table-title">Santa's List</h2>
     <table class="table">
         <thead>
             <tr>

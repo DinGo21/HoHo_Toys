@@ -1,0 +1,134 @@
+.tableChild {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra horizontalmente el contenido */
+    margin: auto 15%; /* Centra la tabla horizontalmente */
+    margin-bottom: 3%;
+}
+
+table {
+    width: 90%; /* La tabla ocupa solo el 90% del ancho */
+    border-collapse: collapse;
+    background-color: var(--card);
+    font-family: 'Christmas Squad', sans-serif;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center; /* Centra todos los datos */
+    padding: 5.5em;
+}
+
+.table-title{
+    font-family: 'Christmas Squad', sans-serif;
+    font-size: 6.5rem;
+    color: var(--darkRed);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+thead {
+    background-color: var(--darkRed);
+    color: white;
+}
+
+thead th {
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    
+    letter-spacing: 2px;
+}
+
+tbody tr {
+    background-color: var(--beige);
+    border-bottom: 1px solid var(--brown);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9e9de;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody td {
+    padding: 20px;
+    color: var(--darkBrown);
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+}
+
+tbody td p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+span.inactive {
+    color: var(--darkRed);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+span.active {
+    color: var(--green);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+table .listHeader {
+    background-color: var(--darkRed);
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+table tbody tr:hover {
+    background-color: rgba(69, 197, 11, 0.2);
+}
+
+/* Rounded corners and "paper" shadow */
+.table {
+    border: 1px solid var(--brown);
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #f7f2ee, #f9e9de);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Handwriting effect for headers */
+thead th {
+    font-family: 'Christmas Squad', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+/* Footer with a "torn paper" style */
+tfoot {
+    background-color: var(--brown);
+    color: white;
+    font-family: 'Christmas Squad', sans-serif;
+    font-size: 1.7rem;
+    padding: 15px;
+    text-align: center;
+}
+
+tfoot td {
+    border-top: 2px dashed white;
+    padding: 20px;
+}
+
+/* Adjustments for mobile */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 1.6rem;
+    }
+
+    thead th, tbody td {
+        padding: 15px;
+    }
+}
