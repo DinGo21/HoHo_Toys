@@ -2,9 +2,10 @@
 
 @section('content')
 
-<div class="backBtn">
+<div class="addBtn">
     <a href="{{ route('santa') }}"> 
         <img src="{{asset('img/arrow_red.ico')}}" alt="back-Button" class="add">
+        <p>Back to Santa</p>
     </a>
 </div>
 
