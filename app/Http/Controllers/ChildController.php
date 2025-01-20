@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Child;
 use App\Models\Toy;
+use App\Models\Child;
+use App\Models\ChildToy;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
 class ChildController extends Controller
@@ -121,6 +122,12 @@ class ChildController extends Controller
 
     public function list()
     {
+        $childToys = ChildToy::all();
+        
+        foreach($childToys as $childToy){
+            $childToy->delete();
+        }
+
         $children = Child::all();
 
         foreach ($children as $child) {
@@ -135,7 +142,13 @@ class ChildController extends Controller
             $this->gift_toys($child);
         }
 
-        return redirect()->route('santa');
+        return redirect()->route('santalistview');
+    }
+
+    public function listView()
+    {
+        $children = Child::all();
+        return view('list', compact('children'));
     }
 
     /**

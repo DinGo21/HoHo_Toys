@@ -239,5 +239,13 @@ class ChildTest extends TestCase
         foreach ($childNice->toys as $toy) {
             $this->assertEquals(7, $toy->min_age);
         }
+
+        (New ChildController())->list();
+
+    }
+
+    public function test_if_listView_method_return_correct_view(){
+        $response = $this->get(route('santalistview'));
+        $response->assertViewIs('list');
     }
 }
