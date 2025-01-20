@@ -53,7 +53,7 @@
                         <img src="img/viewIcon.ico" alt="view-Button" class="crudBtn">
                     </a>
 
-                    <a href="{{ route('santadestroy', ['id' => $child->id]) }}">
+                    <a href="?action=delete&id={{$child->id}}">
                         <img src="{{ asset('img/deleteIcon.ico') }}" alt="delete-Button" class="crudBtn">
                     </a>
                 </div>
