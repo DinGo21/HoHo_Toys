@@ -1,21 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="elfNav">
+<div class ="countToys">
+    <div class ="countToys1">
+        <p class="count">0+: {{ $toyCounts[0] }}</p>
+        <p class="count">3+: {{ $toyCounts[1] }}</p>
+        <p class="count">7+: {{ $toyCounts[2] }}</p>
+    </div>
+    <div class ="countToys2">
+        <p class="count">12+: {{ $toyCounts[3] }}</p>
+        <p class="count">16+: {{ $toyCounts[4] }}</p>
+        <p class="count">18+: {{ $toyCounts[5] }}</p>
+    </div>
+    <p class="count countTotal">Total Toys: {{ $toyCounts[6]}}</p>
+</div>
+
 <div class="addBtn">
     <a href="{{ route('elfcreate') }}">
         <img src="img/addButton.ico" alt="add-Button" class="add">
         <p>Add New Toy</p>
     </a>
 </div>
-
-<div>
-    <h5>0+ Toys: {{ $toyCounts[0] }}</h5>
-    <h5>3+ Toys: {{ $toyCounts[1] }}</h5>
-    <h5>7+ Toys: {{ $toyCounts[2] }}</h5>
-    <h5>12+ Toys: {{ $toyCounts[3] }}</h5>
-    <h5>16+ Toys: {{ $toyCounts[4] }}</h5>
-    <h5>18+ Toys: {{ $toyCounts[5] }}</h5>
-    <h5>Total Toys: {{ $toyCounts[6]}}</h5>
 </div>
 
 <div class="cardSection">

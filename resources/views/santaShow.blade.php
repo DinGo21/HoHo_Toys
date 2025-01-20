@@ -10,7 +10,7 @@
 
     <div class="cardSection">
         <div class="card" id="oneCard">
-            <img src="{{$child->photo}}" class="card-img-top" alt="Photo of {{$child->name}} {{$child->surname}}">
+            <img src="{{$child->photo}}" class="card-img-top-show" alt="Photo of {{$child->name}} {{$child->surname}}">
             <div class="card-body">
                 <h5 class="card-title">{{$child->name}} {{$child->surname}}</h5>
             </div>
