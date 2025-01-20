@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="elfNav">
+    <div class="countToysGrid">
 <div class ="countToys">
     <div class ="countToys1">
         <p class="count">0+: {{ $toyCounts[0] }}</p>
@@ -14,6 +15,7 @@
         <p class="count">18+: {{ $toyCounts[5] }}</p>
     </div>
     <p class="count countTotal">Total Toys: {{ $toyCounts[6]}}</p>
+</div>
 </div>
 
 <div class="addBtn">
