@@ -4,6 +4,8 @@ namespace Tests\Feature;
 
 use App\Models\Toy;
 use Tests\TestCase;
+use App\Models\Child;
+use App\Http\Controllers\ToyController;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -47,7 +49,7 @@ class ToyTest extends TestCase
             'name' => 'New Toy',
             'photo' => 'photo.jpg',
             'description' => 'A wonderful toy',
-            'min_age' => 3,
+            'min_age' => '3',
         ];
 
         $response = $this->post(route('elfstore'), $data);
@@ -95,7 +97,7 @@ class ToyTest extends TestCase
         'name' => 'Updated Name',
         'photo' => 'ohohij',
         'description' => 'Updated description',
-        'min_age' => 0,
+        'min_age' => '0',
     ]);
 
     $response->assertRedirect('elf');
@@ -103,7 +105,7 @@ class ToyTest extends TestCase
     $updatedToy = Toy::find($toy->id);
     $this->assertEquals('Updated description', $updatedToy->description);
     $this->assertEquals('Updated Name', $updatedToy->name);
-    $this->assertEquals(0, $updatedToy->min_age);
+    $this->assertEquals('0', $updatedToy->min_age);
 }
 
 
@@ -132,5 +134,77 @@ class ToyTest extends TestCase
         $this->assertDatabaseMissing('toys', ['id' => $toy->id]);
 
         $response->assertRedirect(route('elf'));
+    }
+
+    public function test_age_rage_counter_works(){
+        Toy::factory()->create(['min_age' => 0]);
+        Toy::factory()->create(['min_age' => 3]);
+        Toy::factory()->create(['min_age' => 7]);
+        Toy::factory()->create(['min_age' => 12]);
+        Toy::factory()->create(['min_age' => 16]);
+        Toy::factory()->create(['min_age' => 18]);
+
+        $response = $this->get(route('elf'));
+        $response = (New ToyController())->ageRangeCounter();
+        
+        $this->assertEquals('1', $response[0]);
+        $this->assertEquals('1', $response[1]);
+        $this->assertEquals('1', $response[2]);
+        $this->assertEquals('1', $response[3]);
+        $this->assertEquals('1', $response[4]);
+        $this->assertEquals('1', $response[5]);
+        $this->assertEquals('6', $response[6]);
+    }
+
+    public function test_it_has_fillable_properties()
+    {
+        $fillable = (new Toy())->getFillable();
+
+        $this->assertEquals([
+            'name',
+            'photo',
+            'description',
+            'min_age',
+        ], $fillable);
+    }
+
+    public function test_it_can_create_a_toy()
+    {
+        Toy::factory()->create([
+            'name' => 'Test Toy',
+            'photo' => 'test_photo_url.jpg',
+            'description' => 'This is a test toy.',
+            'min_age' => 7,
+        ]);
+
+        $this->assertDatabaseHas('toys', [
+            'name' => 'Test Toy',
+            'photo' => 'test_photo_url.jpg',
+            'description' => 'This is a test toy.',
+            'min_age' => 7,
+        ]);
+    }
+
+    public function test_it_can_belong_to_many_children()
+    {
+        $toy = Toy::factory()->create();
+        $child1 = Child::factory()->create();
+        $child2 = Child::factory()->create();
+
+        $toy->children()->attach([$child1->id, $child2->id]);
+
+        $this->assertCount(2, $toy->children);
+        $this->assertTrue($toy->children->contains($child1));
+        $this->assertTrue($toy->children->contains($child2));
+    }
+
+    public function test_it_can_return_children_correctly()
+    {
+        $toy = Toy::factory()->create();
+        $child = Child::factory()->create();
+
+        $toy->children()->attach($child->id);
+
+        $this->assertEquals($child->id, $toy->children->first()->id);
     }
 }

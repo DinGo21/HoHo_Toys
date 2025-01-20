@@ -58,21 +58,21 @@ class ChildController extends Controller
         return view('santaShow', compact('child'));
     }
 
-    private function gift_tickets($child): void
+    public function gift_tickets($child): void
     {
         $tickets = Toy::whereIn("id", [28, 29, 30])->get();
 
         $child->toys()->attach([$tickets[rand(0, count($tickets) - 1)]->id]);
     }
 
-    private function gift_charcoal($child): void
+    public function gift_charcoal($child): void
     {
         $charcoal = Toy::where("name", "LIKE", "%Carbón%")->get();
 
         $child->toys()->attach([$charcoal[rand(0, count($charcoal) - 1)]->id]);
     }
 
-    private function get_toys($child)
+    public function get_toys($child)
     {
         switch (true) {
             case ($child->age >= 0 && $child->age < 3):
@@ -94,13 +94,13 @@ class ChildController extends Controller
                 $toys = Toy::where("min_age", "=", "16")->get()->toArray();
                 break;
             default:
-                $toys = Toy::find(1)->toArray();
+                $toys = Toy::find(1)->get()->toArray();
                 break;
         }
         return $toys;
     }
 
-    private function gift_toys($child)
+    public function gift_toys($child)
     {
         $toys = $this->get_toys($child);
         if (empty($toys)) {

@@ -43,7 +43,7 @@ class ToyController extends Controller
             'name' => $request->name,
             'photo' => $request->photo,
             'description' => $request->description,
-            'min_min_age' => $request->min_min_age,
+            'min_age' => $request->min_age,
         ]);
         $toys->save();
 
@@ -119,7 +119,7 @@ class ToyController extends Controller
             'name' => $request->name,
             'photo' => $request->photo,
             'description' => $request->description,
-            'min_min_age' => $request->min_min_age,
+            'min_age' => $request->min_age,
         ]);
 
         $toys -> save();
