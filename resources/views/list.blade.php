@@ -10,7 +10,7 @@
 
     <a href="{{ route('santalist') }}">
         <img src="{{ asset('img/list.png') }}" alt="list-Button" class="add">
-        <p>Santa's List</p>
+        <p>Add Gifts</p>
     </a>
 </div>
 
