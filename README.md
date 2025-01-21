@@ -40,7 +40,25 @@ This is the table for **Santa Claus**. It should:
 ***
 ## :eye_speech_bubble: Project overview
 
-(Insert screenshoots)
+### 🎀 Welcome table
+
+![image](https://github.com/user-attachments/assets/25bade8e-a564-4b17-be0b-5c3bd0c1bbe6)
+
+
+### :gift: Toy's table
+
+![image](https://github.com/user-attachments/assets/80e208df-8ea8-4d79-902c-337caba4838c)
+
+
+### 👶Children's table
+
+![image](https://github.com/user-attachments/assets/b9eb33b9-490b-4d5d-8012-552031739bd8)
+
+
+### 👼PIVOT table (Santa's list) 
+
+![image](https://github.com/user-attachments/assets/04d6006c-0ef9-41b8-aa47-833e48036405)
+
 
 ***
 ### Project Diagrams (BBDD)
@@ -167,12 +185,18 @@ php artisan test
 
 ***
 ### Coverage
+
 To see the **coverage** you can use this command at the **VSC** terminal:
 ```
-php artisan test --coverage
+php artisan test --coverage-html=coverage-report
 ```
+> [!IMPORTANT]
+> Everytime that you do **new tests** you need to put the command above in the **VSC** terminal, so it can **update** your coverage.
+This will add a **folder** called *coverage-report*, go to the folder, go to the *index.html*, and then **open with live server**. After that you should see this page:
+
 ![coverage hohotoys](https://github.com/user-attachments/assets/b92d73ac-e2be-49f6-9dd3-9d8600d751d7)
 
+***
 
 ***
 ## :bust_in_silhouette: Authors
