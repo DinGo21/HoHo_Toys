@@ -163,21 +163,16 @@ Before you start to read how to install the project you'll need these requiremen
 ```
 php artisan test
 ```
-(insert screenshoot)
+![tests hohotoys](https://github.com/user-attachments/assets/bf9cb8a1-f6d4-4b01-9fa7-23267cff8376)
 
 ***
 ### Coverage
 To see the **coverage** you can use this command at the **VSC** terminal:
 ```
-php artisan test --coverage-html=coverage-report
+php artisan test --coverage
 ```
+![coverage hohotoys](https://github.com/user-attachments/assets/b92d73ac-e2be-49f6-9dd3-9d8600d751d7)
 
-> [!IMPORTANT]
-> Everytime that you do **new tests** you need to put the command above in the **VSC** terminal, so it can **update** your coverage.
-
-This will add a **folder** called *coverage-report*, go to the folder, go to the *index.html*, and then **open with live server**. After that you should see this page:
-
-(insert screenshoot)
 
 ***
 ## :bust_in_silhouette: Authors
