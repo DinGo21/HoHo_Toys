@@ -1,68 +1,235 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎀 HoHo Toys :teddy_bear:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## :bulb:Project proposal
 
-## About Laravel
+**Santa Claus** asks us to create a web that helps him to manage his toy manufacturing and gift list for each child.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Requirements:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Min **70%** of **test coverage**.
+- Well-configured **project** and **user stories**.
+- **Elf routes** must contain the word *elves*.
+- **Santa routes** must contain *Santa*.
+- Creating a **Welcome page** to the toy factory.
+  
+***
+### :gift: Toy's table
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+This is the table for Santa's **Elves**. It should:
 
-## Learning Laravel
+- Display all **manufactured toys** *(Blade and Json)*.
+- Allow to **Insert, modify or delete a toy** *(Endpoints)*.
+- Let them watch the **show** of a toy *(Endpoints and Blade)*.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+***
+### 👶Children's table
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+This is the table for **Santa Claus**. It should:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Display all **children** *(Blade and Json)*.
+- Allow to **insert, modify or delete a child** *(Endpoints)*.
+- Let him watch the **show** of children *(Endpoints and Blade)*.
+  
+***
+### 👼PIVOT table (Santa's list) 
 
-## Laravel Sponsors
+- **Naughty** children will only recieve **1 gift (Coal)**. There are three different types of coal.
+- Good children will receive **2 random gifts** from the list of toys **(age appropriate)** and those gifts can **NOT** be **repeated** to the same child.
+- **+18** gifts only could be recieved by **teens**. They will recieve a random **travel** to these places: **DisneyLand, Warner or Isla Mágica**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+***
+## :eye_speech_bubble: Project overview
 
-### Premium Partners
+### 🎀 Welcome view
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+![image](https://github.com/user-attachments/assets/25bade8e-a564-4b17-be0b-5c3bd0c1bbe6)
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### :gift: Toy's view
 
-## Code of Conduct
+![image](https://github.com/user-attachments/assets/80e208df-8ea8-4d79-902c-337caba4838c)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+### 👶Children's view
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![image](https://github.com/user-attachments/assets/b9eb33b9-490b-4d5d-8012-552031739bd8)
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# HoHoToys
-# HoHoToys
+### 👼PIVOT table (Santa's list) 
+
+![image](https://github.com/user-attachments/assets/04d6006c-0ef9-41b8-aa47-833e48036405)
+
+
+***
+### Project Diagrams (BBDD)
+
+![BBDD Diagram](https://github.com/user-attachments/assets/38f857bb-2a0f-4ad9-a1a5-e4b7021d8096)
+
+***
+## :scroll: Installation
+
+1.) **Clone** this repository:
+```
+https://github.com/DinGo21/HoHo_Toys
+```
+
+***
+2.) Install **Composer** and **NPM**
+```
+composer install
+```
+```
+npm install
+```
+
+***
+3.) **Create** a *.env* file copying everything inside the existing file *.env.example* and **modify** the following **lines**:
+* DB_CONNECTION=mysql
+* DB_DATABASE=jobSearch
+
+***
+4.) Create a **database** in **MySQL**
+
+***
+5.) Now go to the **VSC terminal** and put the following command:
+```
+php artisan migrate:fresh --seed
+```
+This command will **generate** all the **tables**.
+
+***
+6.) Open another terminal in **VSC** and put the following command
+```
+npm run dev
+```
+
+***
+7.) Open **another terminal** and **run** the **server** with this command:
+```
+php artisan serve
+```
+You'll see an **url** that is going to take you to a website.
+
+>[!IMPORTANT]
+>Be sure that your running npm and the server in **DIFFERENT** terminals, **DON'T** close these two terminals and **DON'T** use other commands in these two terminals.
+
+***
+### :floppy_disk: Installation requirements
+Before you start to read how to install the project you'll need these requirements:
+>[!NOTE]
+>If you can't install xampp, look for any other local server that supports **MySQL** and **PHP**
+***
+
+:black_circle: **XAMPP**
+
+:black_circle: Install **Composer**
+
+:black_circle: Install **NPM** in **Node.js**
+
+:black_circle: **Xdebug** (for the tests coverage)
+
+:black_circle: **Postman**
+
+***
+## :mag_right:Documentation
+
+### Endpoints
+***
+#### :gift:Toy's table
+✏️ Create (POST)
+`http://127.0.0.1:8000/api/elf/store`
+
+📖 Read (GET)
+`http://127.0.0.1:8000/api/elf`
+
+💱 Update (PUT)
+`http://127.0.0.1:8000/api/elf/update/{id}`
+
+❌ Destroy (DELETE)
+`http://127.0.0.1:8000/api/elf/destroy/{id}`
+
+👁️ Show (GET)
+`http://127.0.0.1:8000/api/elf/show/{id}`
+***
+#### 👶Children's table
+#### Get kids
+✏️ Create (POST)
+`http://127.0.0.1:8000/api/santa/store`
+
+📖 Read (GET)
+`http://127.0.0.1:8000/api/santa`
+
+💱 Update (PUT)
+`http://127.0.0.1:8000/api/santa/update/{id}`
+
+❌ Destroy (DELETE)
+`http://127.0.0.1:8000/api/santa/destroy/{id}`
+
+👁️ Show (GET)
+`http://127.0.0.1:8000/api/santa/show{id}`
+
+***
+#### 👼Santa's list
+`http://127.0.0.1:8000/api/santa/list`
+
+***
+## :white_check_mark: Tests
+
+> [!IMPORTANT]
+> It's important to test the project so we can check if it works correctly and to do that use this command in the **VSC** terminal:
+
+```
+php artisan test --coverage
+```
+![JOJO test](https://github.com/user-attachments/assets/d0360887-593a-4941-b1eb-45555340a147)
+
+***
+### Coverage
+
+To see the **coverage** you can use this command at the **VSC** terminal:
+```
+php artisan test --coverage-html=coverage-report
+```
+> [!IMPORTANT]
+> Everytime that you do **new tests** you need to put the command above in the **VSC** terminal, so it can **update** your coverage.
+This will add a **folder** called *coverage-report*, go to the folder, go to the *index.html*, and then **open with live server**. After that you should see this page:
+
+![coverage-report](https://github.com/user-attachments/assets/338277fa-b18d-491a-9701-4a703bff4a39)
+
+***
+
+***
+## :bust_in_silhouette: Authors 2nd Sprint.
+- **Valeria Dobado**: https://github.com/ugotchriscoded
+- **Rebeca Bernal**: https://github.com/rebecabernal
+- **Talena Barbosa**: https://github.com/talenaa
+- **Rodrigo Lastra**: https://github.com/rodrigoo1604
+- **Pepe Gavilán**: https://github.com/sr-calcetines
+- **Diego Santamaría**: https://github.com/DinGo21
+
+***
+## :bust_in_silhouette: Authors 1st Sprint.
+- **Alejandro Campos**: https://github.com/Camposx
+- **Ariana Martín**: https://github.com/ArianaMartinMartinez
+- **Inma Gonzalez**: https://github.com/Inma0711
+- **Jaz Walters**: https://github.com/Jaz356
+- **Alberto Hernandez**: https://github.com/TOKIO-V2
+- **Angie Helen Sánchez**: https://github.com/angiehelensanchez
+  
+***
+## Languages and tools
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='PHP' src='https://img.shields.io/badge/PHP-100000?style=for-the-badge&logo=PHP&logoColor=white&labelColor=896696&color=896696'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='html5' src='https://img.shields.io/badge/html-100000?style=for-the-badge&logo=html5&logoColor=white&labelColor=FF8400&color=FF8400'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='css3' src='https://img.shields.io/badge/css-100000?style=for-the-badge&logo=css3&logoColor=white&labelColor=079FB0&color=079FB0'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='mysql' src='https://img.shields.io/badge/mysql-100000?style=for-the-badge&logo=mysql&logoColor=white&labelColor=1C662F&color=1C662F'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='git' src='https://img.shields.io/badge/git-100000?style=for-the-badge&logo=git&logoColor=white&labelColor=FF0000&color=FF0000'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='github' src='https://img.shields.io/badge/github-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000&color=000000'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='canva' src='https://img.shields.io/badge/canva-100000?style=for-the-badge&logo=canva&logoColor=white&labelColor=A700FB&color=A700FB'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='xampp' src='https://img.shields.io/badge/xampp-100000?style=for-the-badge&logo=xampp&logoColor=white&labelColor=FF8800&color=FF8800'/></a>
+<a href='https://github.com/shivamkapasia0' target="_blank"><img alt='postman' src='https://img.shields.io/badge/postman-100000?style=for-the-badge&logo=postman&logoColor=white&labelColor=FF0000&color=FF0000'/></a>
+***
+
+## Thanks for reading!
+
+**Merry Christmas**. **HO HO HO!** 🎅
+***
