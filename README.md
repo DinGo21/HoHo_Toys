@@ -40,17 +40,17 @@ This is the table for **Santa Claus**. It should:
 ***
 ## :eye_speech_bubble: Project overview
 
-### 🎀 Welcome table
+### 🎀 Welcome view
 
 ![image](https://github.com/user-attachments/assets/25bade8e-a564-4b17-be0b-5c3bd0c1bbe6)
 
 
-### :gift: Toy's table
+### :gift: Toy's view
 
 ![image](https://github.com/user-attachments/assets/80e208df-8ea8-4d79-902c-337caba4838c)
 
 
-### 👶Children's table
+### 👶Children's view
 
 ![image](https://github.com/user-attachments/assets/b9eb33b9-490b-4d5d-8012-552031739bd8)
 
@@ -136,41 +136,41 @@ Before you start to read how to install the project you'll need these requiremen
 ### Endpoints
 ***
 #### :gift:Toy's table
-#### Get toys
-(Insert screenshoots)
+✏️ Create (POST)
+`http://127.0.0.1:8000/api/elf/store`
 
-#### Post toy
-(Insert screenshoots)
+📖 Read (GET)
+`http://127.0.0.1:8000/api/elf`
 
-#### Update toy
-(Insert screenshoots)
+💱 Update (PUT)
+`http://127.0.0.1:8000/api/elf/update/{id}`
 
-#### Delete toy
-(Insert screenshoots)
+❌ Destroy (DELETE)
+`http://127.0.0.1:8000/api/elf/destroy/{id}`
 
-#### Show toy
-(Insert screenshoots)
-
+👁️ Show (GET)
+`http://127.0.0.1:8000/api/elf/show/{id}`
 ***
 #### 👶Children's table
 #### Get kids
-(Insert screenshoots)
+✏️ Create (POST)
+`http://127.0.0.1:8000/api/santa/store`
 
-#### Post kid
-(Insert screenshoots)
+📖 Read (GET)
+`http://127.0.0.1:8000/api/santa`
 
-#### Update kid
-(Insert screenshoots)
+💱 Update (PUT)
+`http://127.0.0.1:8000/api/santa/update/{id}`
 
-#### Delete kid
-(Insert screenshoots)
+❌ Destroy (DELETE)
+`http://127.0.0.1:8000/api/santa/destroy/{id}`
 
-#### Show kid
-(Insert screenshoots)
+👁️ Show (GET)
+`http://127.0.0.1:8000/api/santa/show{id}`
 
 ***
 #### 👼Santa's list
-(Insert endpoints)
+`http://127.0.0.1:8000/api/santa/list`
 
 ***
 ## :white_check_mark: Tests
@@ -179,9 +179,9 @@ Before you start to read how to install the project you'll need these requiremen
 > It's important to test the project so we can check if it works correctly and to do that use this command in the **VSC** terminal:
 
 ```
-php artisan test
+php artisan test --coverage
 ```
-![tests hohotoys](https://github.com/user-attachments/assets/bf9cb8a1-f6d4-4b01-9fa7-23267cff8376)
+![JOJO test](https://github.com/user-attachments/assets/d0360887-593a-4941-b1eb-45555340a147)
 
 ***
 ### Coverage
@@ -194,18 +194,27 @@ php artisan test --coverage-html=coverage-report
 > Everytime that you do **new tests** you need to put the command above in the **VSC** terminal, so it can **update** your coverage.
 This will add a **folder** called *coverage-report*, go to the folder, go to the *index.html*, and then **open with live server**. After that you should see this page:
 
-![coverage hohotoys](https://github.com/user-attachments/assets/b92d73ac-e2be-49f6-9dd3-9d8600d751d7)
+![coverage-report](https://github.com/user-attachments/assets/338277fa-b18d-491a-9701-4a703bff4a39)
 
 ***
 
 ***
-## :bust_in_silhouette: Authors
+## :bust_in_silhouette: Authors 2nd Sprint.
 - **Valeria Dobado**: https://github.com/ugotchriscoded
 - **Rebeca Bernal**: https://github.com/rebecabernal
 - **Talena Barbosa**: https://github.com/talenaa
 - **Rodrigo Lastra**: https://github.com/rodrigoo1604
 - **Pepe Gavilán**: https://github.com/sr-calcetines
 - **Diego Santamaría**: https://github.com/DinGo21
+
+***
+## :bust_in_silhouette: Authors 1st Sprint.
+- **Alejandro Campos**: https://github.com/Camposx
+- **Ariana Martín**: https://github.com/ArianaMartinMartinez
+- **Inma Gonzalez**: https://github.com/Inma0711
+- **Jaz Walters**: https://github.com/Jaz356
+- **Alberto Hernandez**: https://github.com/TOKIO-V2
+- **Angie Helen Sánchez**: https://github.com/angiehelensanchez
   
 ***
 ## Languages and tools
