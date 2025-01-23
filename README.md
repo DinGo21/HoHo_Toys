@@ -85,7 +85,7 @@ npm install
 ***
 3.) **Create** a *.env* file copying everything inside the existing file *.env.example* and **modify** the following **lines**:
 * DB_CONNECTION=mysql
-* DB_DATABASE=jobSearch
+* DB_DATABASE=hohoToys
 
 ***
 4.) Create a **database** in **MySQL**
