@@ -63,38 +63,32 @@ class ToyController extends Controller
     public function ageRangeCounter()
     {
         $toys = Toy::all();
-        $count0 = 0;
-        $count3 = 0;
-        $count7 = 0;
-        $count12 = 0;
-        $count16 = 0;
-        $count18 = 0;
-    
+        $counts = [0, 0, 0, 0, 0, 0, 0];
+
         foreach ($toys as $toy) {
             switch (true) {
                 case ($toy->min_age == 0):
-                    $count0++;
+                    $counts[0]++;
                     break;
                 case ($toy->min_age == 3):
-                    $count3++;
+                    $counts[1]++;
                     break;
                 case ($toy->min_age == 7):
-                    $count7++;
+                    $counts[2]++;
                     break;
                 case ($toy->min_age == 12):
-                    $count12++;
+                    $counts[3]++;
                     break;
                 case ($toy->min_age == 16):
-                    $count16++;
+                    $counts[4]++;
                     break;
                 case ($toy->min_age == 18):
-                    $count18++;
+                    $counts[5]++;
                     break;
             }
         }
-
-        $totalCount = $count0 + $count3 + $count7 + $count12 + $count16 + $count18;
-        return [$count0, $count3, $count7, $count12, $count16, $count18, $totalCount];
+        $counts[6] = $counts[0] + $counts[1] + $counts[2] + $counts[3] + $counts[4] + $counts[5];
+        return $counts;
     }
     
 
